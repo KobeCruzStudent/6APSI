@@ -12,17 +12,33 @@ function LandingPage(){
 
     return<>
 
-        <div className='header'>
-            <h1>
-                header
-            </h1>
+    <nav className='navBar'>
+        <div className='navBar-brand'>
+            Dream Travel
         </div>
+        <div className="searchBar">
+            <input type="text" placeholder="Search..." />
+        </div>
+    </nav>
 
-        <div className='container'>
-            <h1 className='title'>Hello</h1>
-            <button type='button' onClick={goToLogin} className='registerButtons'>Log in</button>
-            <button type='button' className='registerButtons'>Sign Up</button>
+    <div className='pageContent'>
+        <div className='mainContent'>
+            <div className='textContainer'>
+                <h1 className='textHeader'>
+                    Travel the<br></br>World!
+                </h1>
+
+            </div>
+            <div className='buttonContainer'>
+                <button type='button' onClick={goToLogin} className='registerButtons'>Log in</button>
+                <button type='button' className='registerButtons'>Sign Up</button>
+            </div>
         </div>
+    </div>
+
+        
+
+        
         
     </>
 }

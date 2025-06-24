@@ -1,41 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     background-image: url(./Assets/landscape.jpg);
     background-repeat: no-repeat;
-    height: 70vh;
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    padding-top: 10%;
+    background-color: rgba(0, 0, 0, 0.603);
+    background-blend-mode: darken;
 }
 
-.container {
-    border-radius: 20px;
-    background-color: white;
+.pageContent {
+    padding-top: 80px;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    width: 200px;
-    height: 220px;
+    height: calc(100vh - 80px); /* adjust height to fill screen below navbar */
+}
+
+
+
+.navBar {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(20, 12, 66);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
-.title {
-    
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 250px;
+  height: 30px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.searchBar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+
+.navBar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-left: 100px;
+}
+
+
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.textHeader {
+    left: 100px;
+    color: white;
+    font-size: 120px;
+    text-align: left;
+    margin: 0;
+}
+
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 .registerButtons {
     border: none;
     height: 40px;
-    width: 90px;
-    border-radius: 50px;
-    background-color: rgb(255, 117, 237);
-    font-size: 15px;
-    color: white;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(57, 35, 184);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s ease; /* smooth animation */
 }
 
-.header {
-    
+.registerButtons:hover {
+    transform: scale(1.1); /* makes the button 10% larger */
 }
+

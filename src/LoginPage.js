@@ -4,7 +4,8 @@ import './loginPage.css'
 function LoginPage() {
  
   return (
-    <div>
+    
+    <div className='container'>
       <h2>Login</h2>
       <input
         type="text"
