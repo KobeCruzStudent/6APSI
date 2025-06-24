@@ -1,0 +1,41 @@
+body {
+    background-image: url(./Assets/landscape.jpg);
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.container {
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 220px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+.title {
+    
+}
+
+.registerButtons {
+    border: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 50px;
+    background-color: rgb(255, 117, 237);
+    font-size: 15px;
+    color: white;
+}
+
+.header {
+    
+}
